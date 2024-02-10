@@ -1,0 +1,10 @@
+body{
+    background-image: url(./assets/fight.gif);
+    background-size: cover;
+    margin: 0;
+}
+
+#navBar{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.5);
+}
