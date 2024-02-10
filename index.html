@@ -5,21 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zelda Landing Page</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <header>
-        <nav>
-            <container id="navBar">
-                <img src="./assets/logozelda.png" width="70rem">
-                <h2>Início</h2>
-                <h2>Loja</h2>
-                <h2>Sobre</h2>
-                <h2>Contatos</h2>
-            </container>
+        <nav div="container">
+            <div id="navBar">
+                <img id="navItem" src="./assets/logozelda.png" width="70rem">
+                <h2 id="navItem" ><a href="#top">Início</a></h2>
+                <h2 id="navItem"><a href="https://www.nintendo.com/pt-br/store/products/the-legend-of-zelda-tears-of-the-kingdom-switch/" target="_blank">Loja</a></h2>
+                <h2 id="navItem"><a href="#about">Trailer</a></h2>
+            </div>
         </nav>
     </header>
-    <h1>Disponível já no Nintendo Switch</h1>
-    <p>"Zelda: Tears of Kingdom" é uma emocionante aventura que mergulha os jogadores em um universo cativante. Explore masmorras, enfrente desafios e salve o reino de Hyrule em uma jornada repleta de ação. Uma experiência imperdível para amantes de jogos de aventura.</p>
-    <button>Comprar agora</button>
+
+    <div id="bg-container">
+        <div id="bg-gif"></div>
+        <div id="overlay"></div>
+            <div id="text">
+                <h1>Disponível já no Nintendo Switch</h1>
+                <p>"Zelda: Tears of Kingdom" é uma emocionante aventura que mergulha os jogadores em um universo cativante. Explore masmorras, enfrente desafios e salve o reino de Hyrule em uma jornada repleta de ação. Uma experiência imperdível para amantes de jogos de aventura.</p>
+                <button id="buyButton"><a href="https://www.nintendo.com/pt-br/store/products/the-legend-of-zelda-tears-of-the-kingdom-switch/" target="_blank">Comprar agora</a></button>
+            </div>
+    </div>
+    <section id="about">
+        <h1 id="aboutTittle"></h1>
+        <iframe id="trailer" width="560" height="315" src="https://www.youtube.com/embed/uHGShqcAHlQ" frameborder="0" allowfullscreen></iframe>
+    
+    </section>
+
+    <section id="contacts">
+        <h1></h1>
+        <button id="socialMedia"><a href="https://www.facebook.com/NintendoAmerica" target="_blank"><img src="./assets/logo-facebook.svg"></a></button>
+        <button id="socialMedia"><a href="https://twitter.com/NintendoAmerica" target="_blank"><img src="./assets/logo-instagram.svg"></a></button>
+        <button id="socialMedia"><a href="https://www.youtube.com/nintendo" target="_blank"><img src="./assets/logo-twitter.svg"></a></button>
+        <button id="socialMedia"><a href="https://www.instagram.com/nintendoamerica/" target="_blank"><img src="./assets/logo-youtube.svg"></a></button>
+        <span id=finalSpan>© Nintendo. The Legend of Zelda and Nintendo Switch are trademarks of Nintendo.</span>
+    </section>
+
+    
+
 </body>
 </html>

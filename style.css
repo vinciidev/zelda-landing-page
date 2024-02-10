@@ -1,10 +1,135 @@
 body{
-    background-image: url(./assets/fight.gif);
-    background-size: cover;
     margin: 0;
 }
 
-#navBar{
-    display: flex;
-    background-color: rgba(0, 0, 0, 0.5);
+#container{
+    position: relative;
 }
+
+#navBar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: rgba(40, 40, 40, 0.25); 
+}
+
+#navItem{
+    margin-right: 2rem;
+    font-family: 'Protest Strike', sans-serif;
+}
+
+#navItem a{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+#buyButton{
+    border: 1px solid white;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    width: 10rem;
+    height: 3rem;
+    cursor: pointer;
+}
+
+#buyButton a{
+    text-decoration: none;
+    color: inherit;
+}
+
+#bg-container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+  
+#bg-gif{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(./assets/bg.gif);
+    background-size: cover;
+    animation: changeGif 18s linear infinite;
+}
+
+#overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+  }
+
+#text {
+    font-family: 'Protest Strike', sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+  }
+
+@keyframes changeGif {
+    0% {
+      background-image: url('./assets/bg.gif');
+    }
+    16.666% {
+      background-image: url('./assets/fight.gif');
+    }
+    33.333% {
+      background-image: url('./assets/fight2.gif');
+    }
+    50% {
+      background-image: url('./assets/jump.gif');
+    }
+    66.666% {
+      background-image: url('./assets/slow.gif');
+    }
+    83.333% {
+      background-image: url('./assets/touch.gif');
+    }
+    100% {
+      background-image: url('./assets/bg.gif');
+    }
+  }
+
+  #socialMedia{
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    position: relative;
+    left: 40%;
+    transform: translate(0%, -40%);
+  }
+
+  #finalSpan{
+    display: flex;
+    justify-content: center;
+    color: white;
+  }
+
+  #about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  #contacts{
+    background-color: black;
+  }
+
+  #trailer{
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
